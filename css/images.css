@@ -1,0 +1,77 @@
+.image-grid {
+    display: flex;
+    width: 90&;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+
+.responsive {
+    display: block;
+    flex-basis: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+@media only screen and (min-width: 400px) {
+    .responsive {
+        flex-basis: 50%;
+    }
+
+
+
+}
+
+
+
+img {
+    max-width: 50%;
+    height: auto;
+
+}
+
+@media only screen and (min-width: 600px) {
+    .responsive {
+        flex-basis: 33.333%;
+    }
+
+
+
+    img {
+        max-width: 33.333%;
+        height: auto;
+
+    }
+
+    figure img {
+        max-width: 33.333%;
+        height: auto;
+
+    }
+
+    @media only screen and (min-width: 1000px) {
+        .image-grid {
+            display: flex;
+            width: 90&;
+            margin: 0 auto;
+            flex-wrap: nowrap;
+        }
+
+        .responsive {
+            flex-basis: 100%;
+
+        }
+
+
+
+        img {
+            max-width: 100%;
+            height: auto;
+
+        }
+
+
+    }
